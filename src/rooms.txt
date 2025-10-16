@@ -1,0 +1,6 @@
+1,Entrance Hall,You are standing in the grand entrance hall of an old mansion.,NORTH:2,EAST:3
+2,Library,A quiet library filled with dusty books.,SOUTH:1,EAST:4
+3,Kitchen,A kitchen with a faint smell of baking.,WEST:1,NORTH:4
+4,Conservatory,A bright conservatory with many plants.,WEST:2,SOUTH:3,EAST:5
+5,Ballroom,A vast ballroom with a shiny wooden floor.,WEST:4,NORTH:6
+6,Tower Room,A room at the top of the tower with a great view.,SOUTH:5

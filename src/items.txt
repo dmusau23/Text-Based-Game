@@ -1,0 +1,3 @@
+1, Keys, A set of keys
+2, Magnifier, A 2X magnifying handheld magnifier lens
+3, Lamp, A brightly shining brass lamp
