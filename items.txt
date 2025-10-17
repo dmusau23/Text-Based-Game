@@ -1,0 +1,11 @@
+key
+A shiny golden key that might open a door.
+1
+
+lamp
+An old lamp giving faint light.
+2
+
+map
+A worn map showing secret paths.
+3

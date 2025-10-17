@@ -20,6 +20,8 @@ public class RoomTester {
         try {
             RoomDataHandler handler = new RoomDataHandler();
             handler.loadRooms(path);
+            handler.loadItems("items.txt");
+            handler.loadPuzzles("puzzle.txt");
 
             Game game = new Game(handler);
             game.startGame();
@@ -28,7 +30,6 @@ public class RoomTester {
         }
 
         scanner.close();
-    }
-    
 
+    }
 }
