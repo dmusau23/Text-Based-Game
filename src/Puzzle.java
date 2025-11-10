@@ -24,18 +24,21 @@ public class Puzzle {
         this.solved = false;
     }
 
+    public int getRemainingAttempts() {
+        return remainingAttempts;
+    }
+
     public String getDescription() {
         return description;
     }
     public boolean isSolved() {
         return solved;
     }
-    public void reset() {
-        remainingAttempts = attemptsAllowed;
-    }
 
     public String trySolve(String input) {
-        if (solved) return "You already solved the puzzle correctly!";
+        if (solved){
+            return "You already solved the puzzle correctly!";
+        }
         if (input.toLowerCase().equals(answer)) {
             solved = true;
             return "You solved the puzzle correctly!";
@@ -44,7 +47,8 @@ public class Puzzle {
             if (remainingAttempts > 0) {
                 return "The answer you provided is wrong, you still have " + remainingAttempts + " attempt(s). Try one more time.";
             } else {
-                reset();
+                remainingAttempts = 0;
+
                 return "Failed to solve the puzzle.";
             }
         }

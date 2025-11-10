@@ -2,11 +2,10 @@
  * @author Daniel Musau
  * @version 1.0
  * Course: ITEC 3860 Fall 2025
- * Written: August 25, 2025
+ * Written: November 08, 2025
  *
- * This class is our blue print; contains details regarding the rooms.
+ * This class is our blueprint; contains details regarding the rooms including monsters.
  */
-
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,7 +18,8 @@ public class Room {
     private Map<String, Integer> exits;
     private ArrayList<Item> items;
     private Puzzle puzzle;
-    boolean  visited;
+    private Monster monster;
+    boolean visited;
 
     public Room(int roomNumber, String roomName, String description) {
         this.roomNumber = roomNumber;
@@ -28,6 +28,7 @@ public class Room {
         this.exits = new HashMap<>();
         this.items = new ArrayList<>();
         this.puzzle = null;
+        this.monster = null;
         this.visited = false;
     }
 
@@ -35,9 +36,11 @@ public class Room {
     public int getRoomNumber() {
         return roomNumber;
     }
+
     public String getRoomName() {
         return roomName;
     }
+
     public String getDescription() {
         return description;
     }
@@ -59,9 +62,11 @@ public class Room {
     public void addItem(Item item) {
         items.add(item);
     }
+
     public void removeItem(Item item) {
         items.remove(item);
     }
+
     public ArrayList<Item> getItems() {
         return items;
     }
@@ -70,8 +75,22 @@ public class Room {
     public Puzzle getPuzzle() {
         return puzzle;
     }
+
     public void setPuzzle(Puzzle puzzle) {
         this.puzzle = puzzle;
+    }
+
+    // --- Monster Handling ---
+    public Monster getMonster() {
+        return monster;
+    }
+
+    public void setMonster(Monster monster) {
+        this.monster = monster;
+    }
+
+    public void removeMonster() {
+        this.monster = null;
     }
 
     // --- Display Info ---

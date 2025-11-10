@@ -1,11 +1,41 @@
 key
 A shiny golden key that might open a door.
 1
+0
+0
 
 lamp
 An old lamp giving faint light.
 2
+0
+0
 
-map
-A worn map showing secret paths.
+rusty sword
+A rusty but still sharp sword.
+2
+15
+0
+
+health potion
+A red potion that restores health.
 3
+0
+30
+
+iron shield
+A sturdy iron shield that can be used to bash enemies.
+4
+10
+0
+
+magic elixir
+A glowing blue potion with powerful healing properties.
+5
+0
+50
+
+legendary blade
+A magnificent blade forged by ancient smiths.
+6
+25
+0
